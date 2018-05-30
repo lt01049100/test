@@ -1,0 +1,40 @@
+<div>
+  <template>
+    <i-form ref="formItem" :model="formItem" :rules="ruleValidate" :label-width="120" >
+      <Row>
+          <Col :xs="22" :sm="8">
+            <Form-item label="电子报名称" prop="name">
+              <i-input v-model="formItem.name" placeholder="请输入选题名称"></i-input>
+            </Form-item>
+            <Form-item label="电子报链接" prop="url">
+              <i-input v-model="formItem.url" placeholder="请输入"></i-input>
+            </Form-item>
+            <Form-item label="电子报日期" prop="paperTime">
+                <Date-picker type="datetime" :options="paperTimeOptions" placeholder="选择日期" format="yyyy-MM-dd HH:mm:ss" :value="formItem.paperTime" @on-change="dateModify"></Date-picker>
+            </Form-item>
+            <Form-item label="图片链接" prop="picUrl">
+              <i-input v-model="formItem.picUrl" placeholder="请输入"></i-input>
+            </Form-item>
+            <Form-item label="">
+              <img style="width:200px;" :src="formItem.picUrl" alt="">
+            </Form-item>
+            
+            <!-- <Form-item label="提交时间" prop="created">
+                <Date-picker type="date" placeholder="选择日期" v-model="formItem.created"></Date-picker>
+            </Form-item> -->
+            <!-- <Form-item label="上传图片" prop="lastModify">
+              <cropper-upload  :width="710" :height="200" :cropUploadSuccess="onSuccess" :cropUploadFail="onError" :maxSize="2048" style="cursor:pointer;"  >
+                  <div v-if="formItem.imagesarr[0]==''" class="upload-logo-container"><img src="../../../assets/images/images.svg" width="100%"/></div>
+                  <div class="upload-logo-container" style="padding-right:10px;"><img :src="formItem.imagesarr[0]" width="100%"/></div>
+              </cropper-upload>
+            </form-item> -->
+
+          </Col>
+       </Row>
+        <Form-item>
+            <i-button type="primary" @click="handleSubmit('formItem')">提交</i-button>
+            <i-button type="ghost" style="margin-left: 8px" @click="goBack">取消</i-button>
+        </Form-item>
+    </i-form>
+</template>
+</div>

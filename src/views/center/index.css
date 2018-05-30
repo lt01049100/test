@@ -1,0 +1,54 @@
+.ghost-btn-box{
+    margin-bottom: 10px;
+}
+.datatal-div{
+    position: relative;
+    width: 100%;
+}
+.datatal{
+    position: relative;
+    margin-top: 20px;
+    
+	padding-bottom: 30px;
+	background: #FFF;
+	width: 100%;
+    margin: 0!important;
+}
+.datatal .datame{
+    position: relative;
+    display: inline-block;
+    margin: 0 10px;
+    width: 150px;
+    min-height: 150px;
+    padding: 0px!important;
+}
+.datatal .datame .con-img{
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    border: 1px solid #eee;
+    padding: 5px;
+}
+.datatal .datame .con-img .conImgUrl{
+    display: block;
+    width: 100%;
+    height: 205px;
+}
+.datatal .datame .con-do{
+    display: none;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    background-color: #4A90E2;
+    width: 100%;
+    text-align: right;
+    line-height: 100%;
+    padding: 4%;
+}
+.datatal .datame .con-bottom{
+    text-align: center;
+}
+.datatal .datame .con-img:hover .con-do{
+    display: block;
+}
