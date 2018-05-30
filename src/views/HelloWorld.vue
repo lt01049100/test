@@ -7,7 +7,7 @@
 
     <ul>
       <li>
-        <a
+        <a class="atag"
           href="https://vuejs.org"
           target="_blank"
         >
@@ -123,6 +123,7 @@ export default {
   methods: {
       change (status) {
         this.$Message.info('开关状态：' + status);
+        $(".atag").html("queryquery")
       },
       handleSubmit (name) {
           this.$refs[name].validate((valid) => {

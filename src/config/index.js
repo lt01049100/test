@@ -1,6 +1,6 @@
 // 配置
-// let env = process.env.NODE_ENV
-// window.__DEV__ = true
+let env = process.env.NODE_ENV
+window.__DEV__ = true
 //const host = env === 'development' ? 'http://mb.dev.hubpd.com/' : env === 'production' ? 'http://mb.dev.hubpd.com/' : 'http://mb.dev.hubpd.com/'
 // const host = env === 'development' ? 'http://192.168.37.23:8080/' : env === 'production' ? 'http://192.168.37.23:8080/' : 'http://192.168.37.23:8080/'
 // const host = env === 'development' ? 'http://43.250.238.123/' : env === 'production' ? 'http://43.250.238.123/' : 'http://43.250.238.123/'
